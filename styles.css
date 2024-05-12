@@ -1,5 +1,10 @@
 #body{
     margin: 0;
+    display: flex;
+    justify-content: center; /* horizontal alignment*/
+    align-items: center; /*vertical alignment */
+    height: 100vh; /* 100% of viewport height */
+    background-color: hsl(0, 0%, 95%)
 }
 #calculator{
     font-family: Arial, sans-serif;
@@ -15,6 +20,7 @@
     text-align: left;
     border: none;
     background-color:hsl(0, 0%, 20%);
+    color: white
 }
 #keys{
     display: grid;
@@ -32,4 +38,19 @@ button{
     font-size: 4rem;
     font-weight: bold;
     cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%)
+}
+button:active{
+    background-color: hsl(0, 0%, 50%)
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%)
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%)
 }
